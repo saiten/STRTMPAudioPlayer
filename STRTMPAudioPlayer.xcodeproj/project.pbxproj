@@ -1,0 +1,447 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7FF7C12C1C4F5F81004730DC /* STRTMPAudioPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */; };
+		7FF7C12E1C4F5F81004730DC /* STRTMPAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */; };
+		7FF7C13C1C578D37004730DC /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13A1C578D37004730DC /* libcrypto.a */; };
+		7FF7C13D1C578D37004730DC /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13B1C578D37004730DC /* libssl.a */; };
+		7FF7C13F1C578D48004730DC /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13E1C578D48004730DC /* librtmp.a */; };
+		7FF7C15D1C578E57004730DC /* STAudioSpectrumAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C15E1C578E57004730DC /* STAudioSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1451C578E57004730DC /* STAudioSpectrumView.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C15F1C578E57004730DC /* STAudioTemporaryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1471C578E57004730DC /* STAudioTemporaryBuffer.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C1601C578E57004730DC /* STAudioStreamPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C14A1C578E57004730DC /* STAudioStreamPlayer.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C1631C578E57004730DC /* STBlockingQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1511C578E57004730DC /* STBlockingQueue.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C1671C578E57004730DC /* STFLVConverter.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C15A1C578E57004730DC /* STFLVConverter.m */; settings = {ASSET_TAGS = (); }; };
+		7FF7C1681C578E57004730DC /* STRTMPStreaming.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C15C1C578E57004730DC /* STRTMPStreaming.m */; settings = {ASSET_TAGS = (); }; };
+		BC5054D6682AA919D2022500 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F49B5499DC7778FD1AC1223D /* libPods.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		7FF7C1261C4F5F81004730DC /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/$(PRODUCT_NAME)";
+			dstSubfolderSpec = 16;
+			files = (
+				7FF7C12C1C4F5F81004730DC /* STRTMPAudioPlayer.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		7FF7C1281C4F5F81004730DC /* libSTRTMPAudioPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTRTMPAudioPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRTMPAudioPlayer.h; sourceTree = "<group>"; };
+		7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRTMPAudioPlayer.m; sourceTree = "<group>"; };
+		7FF7C13A1C578D37004730DC /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Submodules/OpenSSL-for-iPhone/lib/libcrypto.a"; sourceTree = "<group>"; };
+		7FF7C13B1C578D37004730DC /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Submodules/OpenSSL-for-iPhone/lib/libssl.a"; sourceTree = "<group>"; };
+		7FF7C13E1C578D48004730DC /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = "Submodules/ios-librtmp/lib/librtmp.a"; sourceTree = "<group>"; };
+		7FF7C1421C578E57004730DC /* STAudioSpectrumAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioSpectrumAnalyzer.h; sourceTree = "<group>"; };
+		7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioSpectrumAnalyzer.m; sourceTree = "<group>"; };
+		7FF7C1441C578E57004730DC /* STAudioSpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioSpectrumView.h; sourceTree = "<group>"; };
+		7FF7C1451C578E57004730DC /* STAudioSpectrumView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioSpectrumView.m; sourceTree = "<group>"; };
+		7FF7C1461C578E57004730DC /* STAudioTemporaryBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioTemporaryBuffer.h; sourceTree = "<group>"; };
+		7FF7C1471C578E57004730DC /* STAudioTemporaryBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioTemporaryBuffer.m; sourceTree = "<group>"; };
+		7FF7C1491C578E57004730DC /* STAudioStreamPlayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioStreamPlayer.h; sourceTree = "<group>"; };
+		7FF7C14A1C578E57004730DC /* STAudioStreamPlayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioStreamPlayer.m; sourceTree = "<group>"; };
+		7FF7C1501C578E57004730DC /* STBlockingQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = STBlockingQueue.h; path = Player/STBlockingQueue.h; sourceTree = "<group>"; };
+		7FF7C1511C578E57004730DC /* STBlockingQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = STBlockingQueue.m; path = Player/STBlockingQueue.m; sourceTree = "<group>"; };
+		7FF7C1591C578E57004730DC /* STFLVConverter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STFLVConverter.h; sourceTree = "<group>"; };
+		7FF7C15A1C578E57004730DC /* STFLVConverter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STFLVConverter.m; sourceTree = "<group>"; };
+		7FF7C15B1C578E57004730DC /* STRTMPStreaming.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STRTMPStreaming.h; sourceTree = "<group>"; };
+		7FF7C15C1C578E57004730DC /* STRTMPStreaming.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STRTMPStreaming.m; sourceTree = "<group>"; };
+		7FF7C16B1C578FD9004730DC /* STRTMPAudioPlayer-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = "STRTMPAudioPlayer-Prefix.pch"; path = "STRTMPAudioPlayer/STRTMPAudioPlayer-Prefix.pch"; sourceTree = "<group>"; };
+		C7912CD13FC7979B4CC66262 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		CDD7F62D2BB32DE982117F8F /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		F49B5499DC7778FD1AC1223D /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7FF7C1251C4F5F81004730DC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF7C13F1C578D48004730DC /* librtmp.a in Frameworks */,
+				7FF7C13C1C578D37004730DC /* libcrypto.a in Frameworks */,
+				7FF7C13D1C578D37004730DC /* libssl.a in Frameworks */,
+				BC5054D6682AA919D2022500 /* libPods.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3013970572FF9B4A68B96177 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CDD7F62D2BB32DE982117F8F /* Pods.debug.xcconfig */,
+				C7912CD13FC7979B4CC66262 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		35AE8698C899D83ECB2D1AB2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C13E1C578D48004730DC /* librtmp.a */,
+				7FF7C13A1C578D37004730DC /* libcrypto.a */,
+				7FF7C13B1C578D37004730DC /* libssl.a */,
+				F49B5499DC7778FD1AC1223D /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7FF7C11F1C4F5F81004730DC = {
+			isa = PBXGroup;
+			children = (
+				7FF7C12A1C4F5F81004730DC /* STRTMPAudioPlayer */,
+				7FF7C1291C4F5F81004730DC /* Products */,
+				3013970572FF9B4A68B96177 /* Pods */,
+				35AE8698C899D83ECB2D1AB2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7FF7C1291C4F5F81004730DC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1281C4F5F81004730DC /* libSTRTMPAudioPlayer.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7FF7C12A1C4F5F81004730DC /* STRTMPAudioPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C16A1C578F9D004730DC /* Supporting Files */,
+				7FF7C1401C578E0F004730DC /* Sources */,
+			);
+			path = STRTMPAudioPlayer;
+			sourceTree = "<group>";
+		};
+		7FF7C1401C578E0F004730DC /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1691C578E8C004730DC /* Utilities */,
+				7FF7C1411C578E57004730DC /* AudioSpectrum */,
+				7FF7C1481C578E57004730DC /* AudioStreamPlayer */,
+				7FF7C1581C578E57004730DC /* RTMP */,
+				7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */,
+				7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */,
+			);
+			name = Sources;
+			sourceTree = "<group>";
+		};
+		7FF7C1411C578E57004730DC /* AudioSpectrum */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1421C578E57004730DC /* STAudioSpectrumAnalyzer.h */,
+				7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */,
+				7FF7C1441C578E57004730DC /* STAudioSpectrumView.h */,
+				7FF7C1451C578E57004730DC /* STAudioSpectrumView.m */,
+				7FF7C1461C578E57004730DC /* STAudioTemporaryBuffer.h */,
+				7FF7C1471C578E57004730DC /* STAudioTemporaryBuffer.m */,
+			);
+			name = AudioSpectrum;
+			path = Player/AudioSpectrum;
+			sourceTree = "<group>";
+		};
+		7FF7C1481C578E57004730DC /* AudioStreamPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1491C578E57004730DC /* STAudioStreamPlayer.h */,
+				7FF7C14A1C578E57004730DC /* STAudioStreamPlayer.m */,
+			);
+			name = AudioStreamPlayer;
+			path = Player/AudioStreamPlayer;
+			sourceTree = "<group>";
+		};
+		7FF7C1581C578E57004730DC /* RTMP */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1591C578E57004730DC /* STFLVConverter.h */,
+				7FF7C15A1C578E57004730DC /* STFLVConverter.m */,
+				7FF7C15B1C578E57004730DC /* STRTMPStreaming.h */,
+				7FF7C15C1C578E57004730DC /* STRTMPStreaming.m */,
+			);
+			name = RTMP;
+			path = Player/RTMP;
+			sourceTree = "<group>";
+		};
+		7FF7C1691C578E8C004730DC /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C1501C578E57004730DC /* STBlockingQueue.h */,
+				7FF7C1511C578E57004730DC /* STBlockingQueue.m */,
+			);
+			name = Utilities;
+			sourceTree = "<group>";
+		};
+		7FF7C16A1C578F9D004730DC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				7FF7C16B1C578FD9004730DC /* STRTMPAudioPlayer-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = ..;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7FF7C1271C4F5F81004730DC /* STRTMPAudioPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7FF7C1311C4F5F81004730DC /* Build configuration list for PBXNativeTarget "STRTMPAudioPlayer" */;
+			buildPhases = (
+				9794EF9488916CD3755B3245 /* Check Pods Manifest.lock */,
+				7FF7C1241C4F5F81004730DC /* Sources */,
+				7FF7C1251C4F5F81004730DC /* Frameworks */,
+				7FF7C1261C4F5F81004730DC /* CopyFiles */,
+				BDE3CE07140926B0588444CE /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = STRTMPAudioPlayer;
+			productName = STRTMPAudioPlayer;
+			productReference = 7FF7C1281C4F5F81004730DC /* libSTRTMPAudioPlayer.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7FF7C1201C4F5F81004730DC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0700;
+				ORGANIZATIONNAME = saiten;
+				TargetAttributes = {
+					7FF7C1271C4F5F81004730DC = {
+						CreatedOnToolsVersion = 7.0.1;
+					};
+				};
+			};
+			buildConfigurationList = 7FF7C1231C4F5F81004730DC /* Build configuration list for PBXProject "STRTMPAudioPlayer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7FF7C11F1C4F5F81004730DC;
+			productRefGroup = 7FF7C1291C4F5F81004730DC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7FF7C1271C4F5F81004730DC /* STRTMPAudioPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		9794EF9488916CD3755B3245 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		BDE3CE07140926B0588444CE /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7FF7C1241C4F5F81004730DC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7FF7C15F1C578E57004730DC /* STAudioTemporaryBuffer.m in Sources */,
+				7FF7C12E1C4F5F81004730DC /* STRTMPAudioPlayer.m in Sources */,
+				7FF7C1631C578E57004730DC /* STBlockingQueue.m in Sources */,
+				7FF7C1601C578E57004730DC /* STAudioStreamPlayer.m in Sources */,
+				7FF7C15D1C578E57004730DC /* STAudioSpectrumAnalyzer.m in Sources */,
+				7FF7C15E1C578E57004730DC /* STAudioSpectrumView.m in Sources */,
+				7FF7C1671C578E57004730DC /* STFLVConverter.m in Sources */,
+				7FF7C1681C578E57004730DC /* STRTMPStreaming.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		7FF7C12F1C4F5F81004730DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		7FF7C1301C4F5F81004730DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7FF7C1321C4F5F81004730DC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CDD7F62D2BB32DE982117F8F /* Pods.debug.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "${SRCROOT}/STRTMPAudioPlayer/${PRODUCT_NAME}-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
+					"${SRCROOT}/Submodules/ios-librtmp/include",
+					"${SRCROOT}/Submodules/OpenSSL-for-iOS/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Submodules/OpenSSL-for-iPhone/lib",
+					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		7FF7C1331C4F5F81004730DC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7912CD13FC7979B4CC66262 /* Pods.release.xcconfig */;
+			buildSettings = {
+				GCC_PREFIX_HEADER = "${SRCROOT}/STRTMPAudioPlayer/${PRODUCT_NAME}-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_ROOT}/Headers/Public\"",
+					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
+					"${SRCROOT}/Submodules/ios-librtmp/include",
+					"${SRCROOT}/Submodules/OpenSSL-for-iOS/include",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Submodules/OpenSSL-for-iPhone/lib",
+					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
+				);
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7FF7C1231C4F5F81004730DC /* Build configuration list for PBXProject "STRTMPAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF7C12F1C4F5F81004730DC /* Debug */,
+				7FF7C1301C4F5F81004730DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7FF7C1311C4F5F81004730DC /* Build configuration list for PBXNativeTarget "STRTMPAudioPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7FF7C1321C4F5F81004730DC /* Debug */,
+				7FF7C1331C4F5F81004730DC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7FF7C1201C4F5F81004730DC /* Project object */;
+}
