@@ -9,9 +9,6 @@
 /* Begin PBXBuildFile section */
 		7FF7C12C1C4F5F81004730DC /* STRTMPAudioPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */; };
 		7FF7C12E1C4F5F81004730DC /* STRTMPAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */; };
-		7FF7C13C1C578D37004730DC /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13A1C578D37004730DC /* libcrypto.a */; };
-		7FF7C13D1C578D37004730DC /* libssl.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13B1C578D37004730DC /* libssl.a */; };
-		7FF7C13F1C578D48004730DC /* librtmp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7FF7C13E1C578D48004730DC /* librtmp.a */; };
 		7FF7C15D1C578E57004730DC /* STAudioSpectrumAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */; settings = {ASSET_TAGS = (); }; };
 		7FF7C15E1C578E57004730DC /* STAudioSpectrumView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1451C578E57004730DC /* STAudioSpectrumView.m */; settings = {ASSET_TAGS = (); }; };
 		7FF7C15F1C578E57004730DC /* STAudioTemporaryBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1471C578E57004730DC /* STAudioTemporaryBuffer.m */; settings = {ASSET_TAGS = (); }; };
@@ -39,9 +36,6 @@
 		7FF7C1281C4F5F81004730DC /* libSTRTMPAudioPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTRTMPAudioPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRTMPAudioPlayer.h; sourceTree = "<group>"; };
 		7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRTMPAudioPlayer.m; sourceTree = "<group>"; };
-		7FF7C13A1C578D37004730DC /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = "Submodules/OpenSSL-for-iPhone/lib/libcrypto.a"; sourceTree = "<group>"; };
-		7FF7C13B1C578D37004730DC /* libssl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libssl.a; path = "Submodules/OpenSSL-for-iPhone/lib/libssl.a"; sourceTree = "<group>"; };
-		7FF7C13E1C578D48004730DC /* librtmp.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = librtmp.a; path = "Submodules/ios-librtmp/lib/librtmp.a"; sourceTree = "<group>"; };
 		7FF7C1421C578E57004730DC /* STAudioSpectrumAnalyzer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioSpectrumAnalyzer.h; sourceTree = "<group>"; };
 		7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = STAudioSpectrumAnalyzer.m; sourceTree = "<group>"; };
 		7FF7C1441C578E57004730DC /* STAudioSpectrumView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = STAudioSpectrumView.h; sourceTree = "<group>"; };
@@ -67,9 +61,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7FF7C13F1C578D48004730DC /* librtmp.a in Frameworks */,
-				7FF7C13C1C578D37004730DC /* libcrypto.a in Frameworks */,
-				7FF7C13D1C578D37004730DC /* libssl.a in Frameworks */,
 				BC5054D6682AA919D2022500 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -89,9 +80,6 @@
 		35AE8698C899D83ECB2D1AB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				7FF7C13E1C578D48004730DC /* librtmp.a */,
-				7FF7C13A1C578D37004730DC /* libcrypto.a */,
-				7FF7C13B1C578D37004730DC /* libssl.a */,
 				F49B5499DC7778FD1AC1223D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -384,11 +372,9 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
 					"${SRCROOT}/Submodules/ios-librtmp/include",
-					"${SRCROOT}/Submodules/OpenSSL-for-iOS/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Submodules/OpenSSL-for-iPhone/lib",
 					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";
@@ -407,11 +393,9 @@
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
 					"${SRCROOT}/Submodules/ios-librtmp/include",
-					"${SRCROOT}/Submodules/OpenSSL-for-iOS/include",
 				);
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
-					"$(PROJECT_DIR)/Submodules/OpenSSL-for-iPhone/lib",
 					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
 				);
 				OTHER_LDFLAGS = "-ObjC";

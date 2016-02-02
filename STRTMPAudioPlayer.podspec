@@ -11,9 +11,12 @@ Pod::Spec.new do |s|
   s.source = { :git => "https://github.com/saiten/STRTMPAudioPlayer.git", :submodules => true }
 
   s.dependency "TPCircularBuffer"
+  s.libraries = "z"
+  s.vendored_libraries = "Submodules/ios-librtmp/lib/librtmp.a"
   
-  s.preserve_paths = 'Submodules/**'
-  s.libraries = 'crypto', 'ssl', 'rtmp'
-  s.vendored_libraries = 'Submodules/OpenSSL-for-iPhone/lib/libcrypto.a', 'Submodules/OpenSSL-for-iPhone/lib/libssl.a', 'Submodules/ios-librtmp/lib/librtmp.a'
-  s.xcconfig = { 'HEADER_SEARCH_PATHS' => '$(SRCROOT)/Submodules/OpenSSL-for-iPhone/include $(SRCROOT)/Submodules/ios-librtmp/include' }
+  s.preserve_paths = 'STRTMPAudioPlayer/*.pch', 'Submodules/**'
+  s.prefix_header_file = 'STRTMPAudioPlayer/STRTMPAudioPlayer-Prefix.pch'
+  s.xcconfig = {
+    "HEADER_SEARCH_PATHS" => "Submodules/ios-librtmp/include"
+  }
 end
