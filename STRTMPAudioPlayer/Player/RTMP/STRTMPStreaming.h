@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "STBlockingQueue.h"
-#import "librtmp/rtmp.h"
+#import <librtmp/rtmp.h>
 
 extern NSString* const STRTMPStreamingErrorDomain;
 

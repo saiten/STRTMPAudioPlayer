@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7F7D3A5E1C60DA270044F382 /* librtmp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7D3A5C1C60DA270044F382 /* librtmp.framework */; };
+		7F7D3A5F1C60DA270044F382 /* openssl.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F7D3A5D1C60DA270044F382 /* openssl.framework */; };
 		7FF7C12C1C4F5F81004730DC /* STRTMPAudioPlayer.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */; };
 		7FF7C12E1C4F5F81004730DC /* STRTMPAudioPlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */; };
 		7FF7C15D1C578E57004730DC /* STAudioSpectrumAnalyzer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7FF7C1431C578E57004730DC /* STAudioSpectrumAnalyzer.m */; settings = {ASSET_TAGS = (); }; };
@@ -33,6 +35,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7F7D3A5C1C60DA270044F382 /* librtmp.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = librtmp.framework; path = Frameworks/librtmp.framework; sourceTree = "<group>"; };
+		7F7D3A5D1C60DA270044F382 /* openssl.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = openssl.framework; path = Frameworks/openssl.framework; sourceTree = "<group>"; };
 		7FF7C1281C4F5F81004730DC /* libSTRTMPAudioPlayer.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libSTRTMPAudioPlayer.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		7FF7C12B1C4F5F81004730DC /* STRTMPAudioPlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = STRTMPAudioPlayer.h; sourceTree = "<group>"; };
 		7FF7C12D1C4F5F81004730DC /* STRTMPAudioPlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = STRTMPAudioPlayer.m; sourceTree = "<group>"; };
@@ -61,6 +65,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7F7D3A5E1C60DA270044F382 /* librtmp.framework in Frameworks */,
+				7F7D3A5F1C60DA270044F382 /* openssl.framework in Frameworks */,
 				BC5054D6682AA919D2022500 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +86,8 @@
 		35AE8698C899D83ECB2D1AB2 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				7F7D3A5C1C60DA270044F382 /* librtmp.framework */,
+				7F7D3A5D1C60DA270044F382 /* openssl.framework */,
 				F49B5499DC7778FD1AC1223D /* libPods.a */,
 			);
 			name = Frameworks;
@@ -366,17 +374,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CDD7F62D2BB32DE982117F8F /* Pods.debug.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/STRTMPAudioPlayer/${PRODUCT_NAME}-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
-					"${SRCROOT}/Submodules/ios-librtmp/include",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
@@ -387,17 +395,17 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = C7912CD13FC7979B4CC66262 /* Pods.release.xcconfig */;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Frameworks",
+				);
 				GCC_PREFIX_HEADER = "${SRCROOT}/STRTMPAudioPlayer/${PRODUCT_NAME}-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_ROOT}/Headers/Public\"",
 					"\"${PODS_ROOT}/Headers/Public/TPCircularBuffer\"",
-					"${SRCROOT}/Submodules/ios-librtmp/include",
 				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"$(PROJECT_DIR)/Submodules/ios-librtmp/lib",
-				);
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;

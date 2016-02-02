@@ -1,3 +1,6 @@
 [submodule "Submodules/ios-librtmp"]
 	path = Submodules/ios-librtmp
 	url = git@github.com:saiten/ios-librtmp.git
+[submodule "Submodules/OpenSSL-for-iPhone"]
+	path = Submodules/OpenSSL-for-iPhone
+	url = git@github.com:x2on/OpenSSL-for-iPhone.git

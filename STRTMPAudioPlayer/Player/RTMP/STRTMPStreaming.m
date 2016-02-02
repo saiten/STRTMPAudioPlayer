@@ -7,7 +7,7 @@
 //
 
 #import "STRTMPStreaming.h"
-#import "librtmp/log.h"
+#import <librtmp/log.h>
 
 NSString* const STRTMPStreamingErrorDomain = @"STRTMPStreamingErrorDomain";
 
