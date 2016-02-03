@@ -7,12 +7,13 @@ Pod::Spec.new do |s|
   s.license = { :type => 'MIT', :file => 'LICENSE' }
   s.platform = :ios, '7.0'
   s.requires_arc = true
-  s.source_files = "STRTMPAudioPlayer/**/*.{h,m}", "Submodules/ios-librtmp/include/**/*.h"
-  s.header_dir = "librtmp"
+  s.source_files = "STRTMPAudioPlayer/**/*.{h,m}"
   s.source = { :git => "https://github.com/saiten/STRTMPAudioPlayer.git" }
-  s.vendored_frameworks = "Frameworks/openssl.framework", "Frameworks/librtmp.framework"
   s.preserve_paths = 'STRTMPAudioPlayer/*.pch'
   s.prefix_header_file = 'STRTMPAudioPlayer/STRTMPAudioPlayer-Prefix.pch'
+  
   s.dependency "TPCircularBuffer"
   s.libraries = "z"
+
+  s.vendored_frameworks = "Frameworks/openssl.framework", "Frameworks/librtmp.framework"
 end

@@ -10,9 +10,9 @@
 #import "STBlockingQueue.h"
 #import <librtmp/rtmp.h>
 
-extern NSString* const STRTMPStreamingErrorDomain;
-
 #define STR2AVAL(av, str)  av.av_val = (char*)str; av.av_len = (int)strlen(av.av_val)
+
+extern NSString* const STRTMPStreamingErrorDomain;
 
 typedef NS_ENUM(NSInteger, STRTMPStreamingState) {
     STRTMPStreamingStateInitialized,
